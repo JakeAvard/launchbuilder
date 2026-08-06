@@ -3539,10 +3539,12 @@ input, select, textarea {
 
 								#header nav > ul > li > a.menuToggle {
 									padding: 0 1.5em;
+									background-color: #ffffff;
 								}
 
 									#header nav > ul > li > a.menuToggle span {
 										display: none;
+										background-color: #ffffff;
 									}
 
 							}
