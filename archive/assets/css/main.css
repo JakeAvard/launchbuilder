@@ -3514,9 +3514,14 @@ input, select, textarea {
 					}
 
 						#header nav > ul > li > a.menuToggle {
-							outline: 0;
-							position: relative;
-						}
+    					outline: 0;
+   						 position: relative;
+   						 background-color: #5F5043; /* Replace with your desired color (e.g., #2e3842 or #ffffff) */
+   						 border-radius: 4px;        /* Adds rounded edges */
+   						 padding: 0 1em;            /* Provides breathing room around icon */
+   						 display: inline-flex;
+   						 align-items: center;
+}
 
 							#header nav > ul > li > a.menuToggle:after {
 								background-image: url("images/bars.svg");
