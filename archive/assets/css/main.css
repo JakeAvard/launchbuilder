@@ -3516,7 +3516,7 @@ input, select, textarea {
 						#header nav > ul > li > a.menuToggle {
     					outline: 0;
    						 position: relative;
-   						 background-color: #5F5043; /* Replace with your desired color (e.g., #2e3842 or #ffffff) */
+   						 background-color: #ffffff; /* Replace with your desired color (e.g., #2e3842 or #ffffff) */
    						 border-radius: 4px;        /* Adds rounded edges */
    						 padding: 0 1em;            /* Provides breathing room around icon */
    						 display: inline-flex;
@@ -3527,6 +3527,7 @@ input, select, textarea {
 								background-image: url("images/bars.svg");
 								background-position: right center;
 								background-repeat: no-repeat;
+								background-color: #ffffff;
 								content: '';
 								display: inline-block;
 								height: 3.75em;
