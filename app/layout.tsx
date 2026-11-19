@@ -3,74 +3,26 @@ import type { Metadata } from 'next';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 
+const siteDescription = 'Jake Avard helps young men build purposeful, disciplined lives through practical frameworks for work, finances, health, relationships, and personal responsibility.';
+
 export const metadata: Metadata = {
-  title: {
-    default: 'Jake Avard — Build a Meaningful Life',
-    template: '%s | Jake Avard',
-  },
-  description:
-    'Faith. Family. Mission. Discipline. Reflections, resources, and formation from missionary, father, writer, and speaker Jake Avard.',
-  keywords: [
-    'Jake Avard',
-    'Catholic missionary',
-    'faith',
-    'family',
-    'mission',
-    'discipline',
-    'Christian living',
-    'spiritual formation',
-    'fatherhood',
-    'Distant City',
-  ],
+  title: { default: 'Jake Avard — The Great Lock-In', template: '%s | Jake Avard' },
+  description: siteDescription,
+  keywords: ['Jake Avard', 'Great Lock-In', 'young men', 'personal development for men', 'discipline', 'career development', 'financial habits', 'fitness', 'accountability', 'Distant City'],
   authors: [{ name: 'Jake Avard' }],
   creator: 'Jake Avard',
   metadataBase: new URL('https://jakeavard.com'),
   openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://jakeavard.com',
-    siteName: 'Jake Avard',
-    title: 'Jake Avard — Build a Meaningful Life',
-    description:
-      'Faith. Family. Mission. Discipline. Reflections, resources, and formation from missionary, father, writer, and speaker Jake Avard.',
-    images: [
-      {
-        url: '/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Jake Avard — Build a Meaningful Life',
-      },
-    ],
+    type: 'website', locale: 'en_US', url: 'https://jakeavard.com', siteName: 'Jake Avard',
+    title: 'Jake Avard — The Great Lock-In', description: siteDescription,
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jake Avard — The Great Lock-In' }],
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Jake Avard — Build a Meaningful Life',
-    description:
-      'Faith. Family. Mission. Discipline. Reflections, resources, and formation from missionary, father, writer, and speaker Jake Avard.',
-    images: ['/og-image.jpg'],
-    creator: '@jakeavard',
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-  alternates: {
-    canonical: 'https://jakeavard.com',
-  },
+  twitter: { card: 'summary_large_image', title: 'Jake Avard — The Great Lock-In', description: siteDescription, images: ['/og-image.jpg'], creator: '@jakeavard' },
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true, 'max-video-preview': -1, 'max-image-preview': 'large', 'max-snippet': -1 } },
+  alternates: { canonical: 'https://jakeavard.com' },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
