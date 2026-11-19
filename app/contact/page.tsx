@@ -26,7 +26,6 @@ export default function ContactPage() {
       <section className="py-16 md:py-24 bg-neutral-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16">
-            {/* Contact info */}
             <div className="space-y-8">
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
@@ -38,10 +37,10 @@ export default function ContactPage() {
                       Email
                     </h3>
                     <a
-                      href="mailto:jake.avard@gmail.com"
+                      href="mailto:hello@jakeavard.com"
                       className="text-muted-foreground hover:text-forest-800 transition-colors"
                     >
-                      jake.avard@gmail.com
+                      hello@jakeavard.com
                     </a>
                   </div>
                 </div>
@@ -85,7 +84,6 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Form Container */}
             <div className="lg:col-span-2">
               <ContactForm />
             </div>
@@ -127,7 +125,6 @@ function ContactForm() {
     }
   };
 
-  // If the form has been sent successfully, render this inline confirmation block
   if (submitted) {
     return (
       <div className="flex flex-col items-center justify-center text-center space-y-4 rounded-2xl bg-white border border-border p-12 min-h-[400px]">
