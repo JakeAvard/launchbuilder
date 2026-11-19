@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import {
-  ArrowRight, Check, Compass, Wallet, Heart, Dumbbell, BriefcaseBusiness,
+  ArrowRight, Check, Compass, Wallet, Heart, Dumbbell, Briefcase,
   BookOpen, CalendarDays, FileText, Target, ShieldCheck
 } from 'lucide-react';
 import { Assessment } from './assessment';
